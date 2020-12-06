@@ -2,16 +2,24 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 
 choco install "microsoft-windows-terminal" -y
 choco install "pwsh" -y
-choco install "dnspy" 
+choco install "elixir" -y
+choco install "python" -y
 
 choco install "notepadplusplus"
 choco pin add -n "notepadplusplus"
-
-choco install "vscode"
+choco install "git" -y
+choco pin add -n "git"
+choco install "vscode" -y
 choco pin add -n "vscode"
+choco install "visualstudio2019community" -y
+choco pin add -n "visualstudio2019community"
+choco install "dnspy" 
 
 choco install "docker-desktop" -y
 choco pin add -n "docker-desktop"
+
+choco install "postman" -y
+choco pin add -n "postman"
 
 choco install "sysinternals" -y
 
